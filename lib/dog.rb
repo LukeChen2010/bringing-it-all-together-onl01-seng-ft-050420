@@ -37,4 +37,8 @@ class Dog
 
     return self
   end
+  
+  def .create(row)
+    
+  end
 end
