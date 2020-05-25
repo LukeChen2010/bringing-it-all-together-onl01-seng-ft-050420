@@ -38,7 +38,8 @@ class Dog
     return self
   end
   
-  def .create(row)
-    
+  def .create(hash)
+    dog = Dog.new(name: hash[:name], breed: hash[:breed])
+    dog.save
   end
 end
