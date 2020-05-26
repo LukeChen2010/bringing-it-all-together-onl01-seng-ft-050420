@@ -80,6 +80,6 @@ class Dog
       SELECT * FROM dogs WHERE name = ? 
     SQL
     
-    dog = DB[:conn].execute(sql, name)[0]
+    dog = DB[:conn].execute(sql, name)
   end
 end
