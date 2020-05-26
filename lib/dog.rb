@@ -74,4 +74,6 @@ class Dog
       return Dog.new_from_db(dog)
     end
   end
+  
+  
 end
