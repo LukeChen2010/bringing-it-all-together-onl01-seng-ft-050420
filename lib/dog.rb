@@ -52,7 +52,9 @@ class Dog
   
   def self.find_by_id(id)
     sql = <<-SQL
-      SELECT * 
+      SELECT * FROM dogs WHERE id = ?
     SQL
+    
+    DB[:conn].execute 
   end
 end
