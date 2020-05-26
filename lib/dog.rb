@@ -80,7 +80,7 @@ class Dog
       SELECT * FROM dogs WHERE name = ? 
     SQL
     
-    dog = Dog.create(DB[:conn].execute(sql, name)[0])
+    dog = Dog.new_from_db(DB[:conn].execute(sql, name)[0])
     
     return dog
   end
