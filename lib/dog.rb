@@ -85,5 +85,6 @@ class Dog
     return dog
   end
   
-  
+  def update
+  end
 end
