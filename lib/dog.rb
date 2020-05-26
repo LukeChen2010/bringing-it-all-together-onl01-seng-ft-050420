@@ -42,6 +42,8 @@ class Dog
   def self.create(hash)
     dog = Dog.new(name: hash[:name], breed: hash[:breed])
     dog.save
+    
+    return dog
   end
   
   def self.new_from_db(row)
