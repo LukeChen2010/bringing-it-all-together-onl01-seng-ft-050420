@@ -55,6 +55,7 @@ class Dog
       SELECT * FROM dogs WHERE id = ?
     SQL
     
-    dog = DB[:conn].execute 
+    dog = DB[:conn].execute(sql, id)
+    return Dog.new_from_db(dog)
   end
 end
