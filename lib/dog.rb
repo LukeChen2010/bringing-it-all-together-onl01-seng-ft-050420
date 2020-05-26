@@ -68,7 +68,7 @@ class Dog
     
     dog = DB[:conn].execute(sql, name, breed[0]
     
-    if dog = nil
+    if dog == nil
       Dog.create(dog)
     else
       return dog
