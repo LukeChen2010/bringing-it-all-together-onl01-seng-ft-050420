@@ -71,7 +71,7 @@ class Dog
     if dog == nil
       Dog.create(name: name, breed: breed)
     else
-      return dog
+      return Dog.new_from_db(dog)
     end
   end
 end
